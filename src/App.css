@@ -1,0 +1,47 @@
+.grid-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: stretch;
+  gap: 40px;
+  padding: 20px 60px;
+
+  flex: 1;
+}
+
+.column {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  gap: 20px;
+}
+
+.left-column {
+  flex: 1 1 0;
+}
+
+.right-column {
+  flex: 2 2 0;
+}
+
+.card {
+  flex: 0;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 10px
+}
+
+.card-text {
+  text-align: left;
+}
+
+.card-header {
+  text-align: left;
+}
+
+.card-content {
+  text-align: left;
+}
