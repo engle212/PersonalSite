@@ -1,3 +1,22 @@
+.navigation {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  padding: 10px 60px;
+}
+
+.material-symbols-outlined > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+span.size-30 {
+  font-size: 30px;
+  font-variation-settings: 'OPSZ' 1;
+}
+
 .grid-container {
   display: flex;
   flex-flow: row wrap;
@@ -29,9 +48,10 @@
 
 .card {
   flex: 0;
-  border: 2px solid gray;
+  border: 2px solid black;
+  background-color: black;
   border-radius: 10px;
-  padding: 10px
+  padding: 16px
 }
 
 .card-text {
@@ -40,6 +60,7 @@
 
 .card-header {
   text-align: left;
+  margin-bottom: 12px;
 }
 
 .card-content {
