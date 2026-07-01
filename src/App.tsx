@@ -1,14 +1,15 @@
 import { useState } from 'react'
+import { Routes, Route } from 'react-router';
+import Home from './pages/Home';
 import './App.css'
-import ColumnLayout from './components/ColumnLayout'
-import NavBar from './components/NavBar'
+
 
 function App() {
   return (
-    <>
-      <NavBar/>
-      <ColumnLayout/>
-    </>
+    <Routes>
+      <Route index element={<Home />} />
+      <Route path="/resume" element={<h1>Hello world!</h1>} />
+    </Routes>
   )
 }
 

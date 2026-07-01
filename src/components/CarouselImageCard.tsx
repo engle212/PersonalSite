@@ -1,12 +1,11 @@
 import { useState } from 'react'
 
-interface CarouselItemProps {
+interface CarouselImageCardProps {
   imagePath: string;
   title: string;
-  content: string;
 }
 
-function CarouselItem({ imagePath, title, content }: CarouselItemProps) {
+function CarouselImageCard({ imagePath, title }: CarouselImageCardProps) {
   return (
     <div className="carousel-item">
       <img src={imagePath}/>
@@ -16,4 +15,4 @@ function CarouselItem({ imagePath, title, content }: CarouselItemProps) {
   )
 }
 
-export default CarouselItem
+export default CarouselImageCard
