@@ -7,7 +7,7 @@ interface CarouselTextCardProps {
 
 function CarouselTextCard({ title, subtitle }: CarouselTextCardProps) {
   return (
-    <div className="carousel-item">
+    <div className="carousel-item border-effect">
       <h2 className="card-text card-header">{title}</h2>
       <h3 className="card-text">{subtitle}</h3>
     </div>

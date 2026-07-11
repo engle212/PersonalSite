@@ -5,9 +5,10 @@ interface CardProps {
   content: string;
 }
 
+
 function Card({ title, content }: CardProps) {
   return (
-    <div className="card">
+    <div className="card border-effect">
       <h2 className="card-text card-header">{title}</h2>
       <p className="card-text card-content">{content}</p>
     </div>

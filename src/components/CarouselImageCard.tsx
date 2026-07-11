@@ -7,7 +7,7 @@ interface CarouselImageCardProps {
 
 function CarouselImageCard({ imagePath, title }: CarouselImageCardProps) {
   return (
-    <div className="carousel-item">
+    <div className="carousel-item border-effect">
       <img src={imagePath}/>
       <h2 className="card-text card-header">{title}</h2>
 

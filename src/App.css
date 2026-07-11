@@ -47,12 +47,21 @@ span.size-30 {
   width: 66%;
 }
 
+.border-effect {
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+  border: 1px solid transparent;
+  border-radius: .5em;
+  background: 
+    linear-gradient(black) padding-box,
+    radial-gradient(circle at var(--mouse-x) var(--mouse-y), white 10%, transparent 30%) border-box,
+    radial-gradient(circle at var(--mouse-x) var(--mouse-y), cyan 30%, black 40%) border-box;
+}
+
 .card {
   flex: 0;
-  border: 2px solid black;
   background-color: black;
-  border-radius: 10px;
-  padding: 16px
+  padding: 16px;
 }
 
 .card-text {
@@ -103,12 +112,13 @@ span.size-30 {
 }
 
 .carousel-item {
+  --mouse-x: 50%;
+  --mouse-y: 50%;
   box-sizing: border-box;
   scroll-snap-align: start;
   flex: 0 0 calc(50% - 0.5em);;
   background-color: black;
   padding: 0em;
-  border-radius: .5em;
   display: flex;
   flex-direction: column;
 }
